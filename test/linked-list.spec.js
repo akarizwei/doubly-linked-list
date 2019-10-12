@@ -31,6 +31,8 @@ describe('LinkedList', () => {
             expect(list.length).to.equal(2);
             expect(list.tail()).to.equal(413);
             expect(list.head()).to.equal(123);
+
+
         });
 
     });
@@ -74,7 +76,7 @@ describe('LinkedList', () => {
             const data = 34;
             const position = 1;
 
-            list.append(32);
+            list.append(34);
             list.append(47);
 
             list.insertAt(position, data);
@@ -86,9 +88,9 @@ describe('LinkedList', () => {
             const list = new LinkedList();
             const position = 1;
             const data = 42;
-            let values = [10, 20];            
+            let values = [10, 20];
             values.forEach((value) => { list.append(value) });
-            
+
             list.insertAt(position, data);
             values.splice(position, 0, data);
 
